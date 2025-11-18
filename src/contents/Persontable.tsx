@@ -8,7 +8,7 @@ type Props = {
   selectedSlug?: string;
 };
 
-export const PeopleTable: React.FC<Props> = ({ people, selectedSlug }) => {
+export const PersonTable: React.FC<Props> = ({ people, selectedSlug }) => {
   const isName = useMemo(
     () => new Map(people.map(p => [p.name, p] as const)),
     [people],

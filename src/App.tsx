@@ -1,10 +1,10 @@
 import './App.scss';
 import { Navigate, Route, Routes } from 'react-router-dom';
-import { HomePage } from './pages/HomePage';
+import { HomePage } from './components/pages/HomePage';
 
-import { NotFoundPage } from './pages/NotFoundPage';
-import { Navbar } from './pages/NavbarPage';
-import { PeoplePage } from './contents/PeopleTable';
+import { NotFoundPage } from './components/pages/NotFoundPage';
+import { Navbar } from './components/pages/NavbarPage';
+import { PeoplePage } from './components/pages/PeoplePage';
 
 export const App = () => (
   <div data-cy="app">
