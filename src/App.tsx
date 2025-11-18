@@ -3,7 +3,7 @@ import { Navigate, Route, Routes } from 'react-router-dom';
 import { HomePage } from './components/pages/HomePage';
 
 import { NotFoundPage } from './components/pages/NotFoundPage';
-import { Navbar } from './components/pages/NavbarPage';
+import { Navbar } from './components/Navbar';
 import { PeoplePage } from './components/pages/PeoplePage';
 
 export const App = () => (

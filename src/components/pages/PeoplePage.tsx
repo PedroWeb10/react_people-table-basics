@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { Person } from '../../types';
 import { getPeople } from '../../api';
 import { Loader } from '../Loader';
-import { PersonPage } from '../person/PersonPage';
+import { PersonTable } from '../person/PersonTable';
 
 export const PeoplePage: React.FC = () => {
   const { slug } = useParams();
@@ -61,7 +61,7 @@ export const PeoplePage: React.FC = () => {
       return <p data-cy="PeopleMessage">There are no people on the server</p>;
     }
 
-    return <PersonPage people={people} selectedSlug={slug} />;
+    return <PersonTable people={people} selectedSlug={slug} />;
   };
 
   return (
