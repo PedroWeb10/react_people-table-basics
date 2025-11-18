@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { Person } from '../../types';
 import { getPeople } from '../../api';
 import { Loader } from '../Loader';
-import { PersonTable } from '../person/PersonTable';
+import { PersonTable } from '../contents/PersonTable';
 
 export const PeoplePage: React.FC = () => {
   const { slug } = useParams();
