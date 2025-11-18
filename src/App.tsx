@@ -4,7 +4,7 @@ import { HomePage } from './pages/HomePage';
 
 import { NotFoundPage } from './pages/NotFoundPage';
 import { Navbar } from './pages/NavbarPage';
-import { PeoplePage } from './contents/PeoplePage';
+import { PeoplePage } from './contents/PeopleTable';
 
 export const App = () => (
   <div data-cy="app">
