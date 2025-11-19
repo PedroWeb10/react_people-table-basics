@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { Person } from '../../types';
 import { getPeople } from '../../api';
 import { Loader } from '../Loader';
-import { PersonTable } from '../contents/PersonTable';
+import { PersonTable } from '../contents/PeopleTable';
 
 export const PeoplePage: React.FC = () => {
   const { slug } = useParams();
@@ -58,7 +58,7 @@ export const PeoplePage: React.FC = () => {
     }
 
     if (people.length === 0) {
-      return <p data-cy="PeopleMessage">There are no people on the server</p>;
+      return <p data-cy="noPeopleMessage">There are no people on the server</p>;
     }
 
     return <PersonTable people={people} selectedSlug={slug} />;
